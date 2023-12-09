@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body
+        {
+            width: 1000px;
+            height: 2000px;
+        }
+    </style>
+</head>
+<body>
+    <button id="mybutton">Click</button>
+    <script>
+        //click
+        document.getElementsById("mybutton").addEventListener('Click',function handleClick()
+        {
+            alert("Button Clicked")
+        })
+        //scroll
+        window.addEventListener('scroll',function handleScroll()
+        {
+            alert("scrolled")
+        })
+        //mouseover
+        document.getElementById("mybutton").addEventListener('mouseover',function mouse()
+        {
+            alert("mouse over")
+        })
+        document.getElementById("username").addEventListener("keypress",function keyPress()
+        {
+            alert("Enter key is pressed")
+        })
+    </script>
+    
+</body>
+</html>

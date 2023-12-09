@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML CSS JS BASIC</title>
+
+    <style>
+        .heading{
+            border: 5px dotted palevioletred;
+            background-color: rgb(21, 206, 206);
+        }
+        .liststyle
+        {
+            border: 5px dashed black;
+            background-color: darkgrey;
+            /* background-image: -moz-radial-gradient(green,rgb(35, 181, 230)); */
+        }
+        form{
+            border: 10px double purple;
+            padding:30px;
+            background-image: -webkit-image-set("./img 1.jpg");
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-weight: bolder;
+        }
+    </style>
+</head>
+<body>
+    <!--Typography  tags-->
+    <div class="heading">
+    <h1>Heading 1</h1>
+    <h2>Heading 2</h2>
+    <h3>Heading 3</h3>
+    <h4>Heading 4</h4>
+    <h5>Heading 5</h5>
+    <h6>Heading 6</h6>
+    </div>
+    <p>This is a paragraph</p>
+    <!-- List Types -->
+    <div class="liststyle">
+    <P>ORDERED LIST</P>
+    <ol type="1">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JS</li>
+    </ol>
+    <p>UNORDERED LIST</p>
+    <ul type="square">
+        <li>Html</li>
+        <li>css</li>
+        <li>js</li>
+    </ul>
+    <p>DEFINITION OR DESCRIPTION LIST</p>
+    <dl >
+        <dt>HTML</dt>
+        <dd>Hyper Text Markup Language</dd>
+        <dt>CSS</dt>
+        <dd>Cascading Style Sheet</dd>
+    </dl>
+    </div>
+    <form >
+        <p>Example using label</p>
+        <label for="un">UserName</label>
+        <input type="text" id="un" />
+        <p>Text box using placeholder</p>
+        <input type="text" placeholder="UserName" required>
+        <br>
+        <p>password</p>
+        <input type="password" placeholder="PassWord" required>
+        <br>
+        <p>Email</p>
+        <input type="email" placeholder="Email" required>
+        <p>Example for radio button</p>
+        <input type="radio" name="gender"/>
+        <label>Male</label>
+        <input type="radio" name="gender"/>
+        <label>Female</label>
+        <p>Example for CheckBox</p>
+        <input type="checkbox" name="fru"/>
+        <label>Apple</label>
+        <input type="checkbox" name="fru"/>
+        <label>Orange</label>
+        <input type="checkbox" name="fru"/>
+        <label>Banana</label> 
+        <p>Example for DropDown</p>
+        <select>
+            <option>Sample 1</option>
+            <option>Sample 2</option>
+            <option>Sample 3</option>
+            <option>Sample 4</option>
+        </select>
+        <p>Choose your file</p>
+        <input type="file" /> 
+        <br><br>
+        <input type="submit" /> 
+        <!-- <input type="reset" />  -->
+    </form>
+</body>
+</html>
