@@ -1,0 +1,94 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+    <style></style>
+</head>
+<body>
+    <table >
+        <thead>Table</thead>
+        <tbody>
+            <tr>
+                <th>Name</th>
+                <th>Reg. No</th>
+                <th>Email</th>
+            </tr>
+            <tr>
+                <td>Dharshini N</td>
+                <td>727822TUCS032</td>
+                <td>dharshini@gamil.com</td>
+            </tr>
+            <tr>
+                <td>Devedharshini S</td>
+                <td>727822TUCS029</td>
+                <td>Devedharshini@gamil.com</td>
+            </tr>
+            <tr>
+                <td>Kanishka M</td>
+                <td>727822TUCS054</td>
+                <td>Kanishka@gamil.com</td>
+            </tr>
+        </tbody>
+        </table>
+    
+</body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Array Refresh</title>
+</head>
+<body>
+
+  <h1>Array Refresh</h1>
+
+  <p>Original Array: North, South, East, West</p>
+
+  <button onclick="refreshArray()">Array button</button>
+  <button onclick="refreshAndJoin()">Refresh Array button</button>
+
+  <ul id="resultList"></ul>
+
+  <script>
+    // Initial array
+    const directions = ['North', 'South', 'East', 'West'];
+
+    // Function to map array elements and concatenate with ' News'
+    function refreshArray() {
+      const newArray = directions.map(direction => direction + ' News');
+      displayResult(newArray);
+    }
+
+    // Function to map array elements and join them into a string
+    function refreshAndJoin() {
+      const resultString = directions.map(direction => direction + ' News').join(', ');
+      displayResult([resultString]);
+    }
+
+    // Function to display the result in a new webpage
+    function displayResult(resultArray) {
+      const resultList = document.getElementById('resultList');
+      resultList.innerHTML = ''; // Clear previous results
+
+      resultArray.forEach(result => {
+        const listItem = document.createElement('li');
+        listItem.textContent = result;
+        resultList.appendChild(listItem);
+      });
+
+      // Open a new window to display the result
+      const newWindow = window.open('', '_blank');
+      newWindow.document.write('<html><head><title>Array Refresh Result</title></head><body>');
+      newWindow.document.write('<h1>Array Refresh Result</h1>');
+      newWindow.document.write(resultList.outerHTML);
+      newWindow.document.write('</body></html>');
+      newWindow.document.close();
+    }
+  </script>
+
+</body>
+</html>
