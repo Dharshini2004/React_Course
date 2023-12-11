@@ -1,0 +1,19 @@
+.car
+{
+    font-weight: bolder;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: larger;
+
+}
+.det
+{
+    font-weight: bolder;
+    font-size: larger;
+
+}
+div
+{
+        background: linear-gradient(90deg, #0062ff, #da61ff);
+        height: 45vh;
+        /* width: 100vw;  */
+}
